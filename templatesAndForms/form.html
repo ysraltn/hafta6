@@ -1,0 +1,13 @@
+{{if .Success}}
+    <h1>Command Received</h1>
+    <form method="POST">
+        <input type="hidden" name="start" value="start"><br />
+        <input type="submit">
+    </form>
+{{else}}
+    <h1>Commands</h1>
+    <form method="POST">
+        <input type="hidden" name="start"><br />
+        <input type="submit">
+    </form>
+{{end}}
